@@ -331,7 +331,6 @@ main{
 .food_menu{
   width: 100%;
   height: 60vw;
-  background-color: red;
 
   & > h1{
     width: 100%;
@@ -350,7 +349,6 @@ main{
   display: flex;
   justify-content: center;
   margin-top: 15vw;
-  background-color: aqua;
 
   & > h1{
     color: rgb(255, 128, 0);
@@ -1707,11 +1705,11 @@ main{
   margin-left: 50px;
 }
 
-.nav8 .menu6block2ptext {
+.menu6block2ptext {
   position: absolute;
   font-size: 25px;
+  margin-top: 1vw;  
   margin-left: 160px;
-  margin-top: 20px;
 }
 
 .menu6block2block {
@@ -1719,15 +1717,14 @@ main{
   width: 440px;
   border-bottom: 2px solid gray;
   margin-left: 162px;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .menu6block2ptext2 {
   position: absolute;
   font-size: 15px;
-
   margin-left: 160px;
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 .menu6block2pNumber {
@@ -1876,7 +1873,6 @@ main{
   display: flex;
   justify-content: center;
   margin-top: 5vw;
-  background-color: aqua;
 
   & > h1{
     color: rgb(255, 128, 0);
@@ -2340,4 +2336,489 @@ main{
   color: rgb(255, 128, 0);
   margin-left: 105px;
   margin-top: -45px;
+}
+
+/*Book your Table*/
+.booktable {
+  position: relative;
+  width: auto;
+  height: 110vh;
+  background-color: rgb(255, 128, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20;
+  margin-top: 30vw;
+}
+.error-message {
+  display: none !important;
+}
+.showMessage {
+  display: block !important;
+  color: red;
+  margin-top: 10px;
+}
+.textTitle {
+  font-size: 60px;
+  font-family: "Times New Roman", serif;
+  text-align: center;
+  color: rgb(116, 66, 15);
+  margin-bottom: 30px;
+}
+
+.inputs {
+  width: 90%;
+  max-width: 500px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5vw;
+}
+
+.form-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  flex: 1 1 45%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input,
+textarea,
+select {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+input.error,
+textarea.error,
+select.error {
+  border-color: red;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px 25px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+form:invalid .error-message {
+  display: block;
+}
+
+textarea {
+  height: 30vh;
+  resize: vertical;
+}
+
+
+/*NAV8*/
+.nav8 {
+  margin-top: vw;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(4, 4, 58);
+  display: block;
+}
+
+.nav8Contact {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(4, 4, 36);
+  display: flex;
+  color: rgb(255, 128, 0);
+  font-size: 25px;
+}
+
+.imgptext{
+  width: 16vw;
+  height: 50px;
+  display: flex;
+  margin-left: 75vw;
+}
+
+.mediaimg{
+  width: 35px;
+  height: 35px;
+  margin-top: 0.5vw;
+}
+
+/*footer blocks*/
+.footerblock1 {
+  position: absolute;
+  width: 51%;
+  height: 24vw;
+  margin-top: 6vw;
+  display: flex;
+  justify-content: space-around;
+  margin-left: -20px;
+  font-family: "Pacifico";
+}
+
+.footers {
+  width: 18vw;
+  height: 18vw;
+  display: block;
+  color: white;
+  margin-left: 40px;
+}
+
+.orangeblock1 {
+  width: 5vw;
+  height: 0;
+  border-bottom: 4px solid rgb(255, 128, 0);
+  margin-left: 10vw;
+  margin-top: -1.5vw;
+}
+
+.footersText {
+  margin-top: 3vw;
+}
+
+.footersPtexts {
+  color: white;
+  margin-top: 10px;
+}
+
+.footer2 {
+  display: block;
+  color: white;
+  font-family: "Pacifico";
+  margin-top: 0.5vw;
+}
+
+.orangeblock2 {
+  width: 4vw;
+  height: 0;
+  border-bottom: 4px solid rgb(255, 128, 0);
+  margin-left: 9vw;
+  margin-top: -2vw;
+}
+
+.location {
+  margin-top: 3vw;
+  display: flex;
+}
+
+.telephone {
+  display: flex;
+  margin-top: 20px;
+}
+
+.male {
+  display: flex;
+  margin-top: 20px;
+}
+
+.generaPtext {
+  font-size: 17px;
+  margin-top: -0.5vw;
+  margin-left: 10px;
+}
+
+.orangeblock3 {
+  width: 4vw;
+  height: 0;
+  border-bottom: 4px solid rgb(255, 128, 0);
+  margin-left: 9vw;
+  margin-top: -1.5vw;
+}
+
+.orangeblock4 {
+  width: 4vw;
+  height: 0;
+  border-bottom: 4px solid rgb(255, 128, 0);
+  margin-left: 11vw;
+  margin-top: -1.7vw;
+}
+
+/*icons facebook,instagram,youtube,twiter*/
+.icons {
+  width: 100%;
+  height: 55px;
+  margin-top: 15px;
+  display: flex;
+}
+
+.blockIcons {
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  margin-top: px;
+  margin-left: 1px;
+  background-color: white;
+}
+
+/*FACEBOOK*/
+.iconsblock1 {
+  border: 3px solid white;
+  border: 1px solid white;
+}
+
+.facebook {
+  width: 34px;
+  height: 34px;
+  color: rgb(4, 4, 58);
+}
+
+.facebook:hover {
+  color: rgb(255, 128, 0);
+}
+
+/*TIKTOKE*/
+.iconsblock2 {
+  background-color: rgb(4, 4, 58);
+  margin-left: 0.5vw;
+  border: 1px solid white;
+}
+
+.tiktok {
+  width: 26px;
+  height: 26px;
+  color: white;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.iconsblock2:hover {
+  background-color: rgb(255, 128, 0);
+}
+
+/*TWITTER*/
+.iconsblock3 {
+  background-color: rgb(4, 4, 58);
+  margin-left: 0.5vw;
+  border: 1px solid white;
+}
+
+.twitter {
+  width: 26px;
+  height: 26px;
+  color: white;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.iconsblock3:hover {
+  background-color: rgb(255, 128, 0);
+}
+
+/*INSTAGRAM*/
+.iconsblock4 {
+  margin-left: 0.5vw;
+  background-color: rgb(4, 4, 58);
+  border: 1px solid white;
+}
+
+.instagram {
+  width: 25px;
+  height: 25px;
+  color: white;
+  margin-top: 4px;
+  margin-left: 3.9px;
+}
+
+.iconsblock4:hover {
+  background-color: rgb(255, 128, 0);
+}
+
+.form-container {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.emailInput2 {
+  width: 100%;
+  height: 50px;
+  padding: 10px 50px 10px 15px;
+  border: 2px solid #ddd;
+  box-sizing: border-box;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+  /* Плавное изменение цвета границы */
+  border: rgb(255, 128, 0);
+}
+
+.emailInput2:focus {
+  border-color: rgb(255, 128, 0);
+  /* Цвет границы при фокусе */
+  outline: none;
+  /* Убираем стандартное выделение */
+}
+
+.emailbutton {
+  position: absolute;
+  right: 0px;
+  margin-top: 1.5vw;
+  background: linear-gradient(45deg, rgb(255, 128, 0), #0056b3);
+  /* Градиентный фон */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Тень для кнопки */
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  /* Плавное изменение фона и тени */
+}
+
+.emailbutton:hover {
+  background: linear-gradient(45deg, #0056b3, rgb(255, 128, 0));
+  /* Изменение градиента при наведении */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  /* Увеличение тени при наведении */
+}
+
+.footerblock2 {
+  position: absolute;
+  width: 51%;
+  height: 24vw;
+  margin-top: 6vw;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 48.4vw;
+  font-family: "Pacifico";
+}
+
+.footerblock3 {
+  width: 100%;
+  height: 13vw;
+  display: flex;
+  font-family: "Pacifico";
+  margin-top: 30vw;
+}
+
+/*footerblock4*/
+.footerblock4 {
+  width: 91.8vw;
+  height: 0;
+  border: 1.5px solid rgb(8, 8, 100);
+  margin-left: 3.5vw;
+}
+
+.whiteblockSVG{
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: rgb(255, 128, 0);
+  margin-top: 1.7vw;
+  margin-left: -92vw;
+}
+
+.whiteblockPtext{
+  font-family: Segoe UI;
+  margin-top: 1.8vw;
+  margin-left: 1vw; 
+  color: white; 
+}
+
+.circle {
+  width: 23px;
+  height: 23px;
+  color: rgb(4, 4, 58);
+  margin-top: 1px;
+  margin-left: 1px;
+}
+
+.whiteblockP {
+  width: 8vw;
+  height: 0;
+  border: 1px solid white;
+  margin-top: 3.5vw;
+  margin-left: -31.7vw;
+}
+
+.whiteblockP2 {
+  width: 6.5vw;
+  height: 0;
+  border: 1px solid white;
+  margin-top: 3.5vw;
+  margin-left: 17vw;
+}
+
+.whiteblockPtext2{
+  font-family: Segoe UI; 
+  color: white; 
+  margin-top: 6.5vw;
+  margin-left: -34.5vw;
+}
+
+.whiteblockP3 {
+  width: 7vw;
+  height: 0;
+  border: 1px solid white;
+  margin-top: 8.2vw;
+  margin-left: -7vw;
+}
+
+.block2Part {
+  width: 20vw;
+  height: 2vw;
+  display: flex;
+  font-family: Segoe UI; 
+  color: white;
+  margin-left: 52vw;
+  margin-top: 2vw;
+}
+
+.whiteblockP4 {
+  width: 7vw;
+  height: 20px;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  margin-top: 0.2vw;
+  margin-left: 1.5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.whiteblockP5 {
+  width: 1.5vw;
+  height: 20px;
+  border-left: 1px solid white;
+  margin-top: 0.2vw;
+  margin-left: 1.5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.helptext{
+  margin-left: 20px;
 }
