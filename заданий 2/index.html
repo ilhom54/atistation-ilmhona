@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список фильмов</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .movie-item { display: flex; justify-content: space-between; align-items: center; padding: 10px; border-bottom: 1px solid #ccc; }
+        .watched { text-decoration: line-through; color: gray; }
+        #noMoviesMessage { text-align: center; color: gray; }
+    </style>
+</head>
+<body>
+    <h1>Список фильмов</h1>
+    <form id="movieForm">
+        <input type="text" id="movieTitle" placeholder="Название фильма">
+        <br>
+        <input type="text" id="movieGenre" placeholder="Жанр">
+        <br>
+        <button type="submit">Добавить</button>
+    </form>
+    <p id="noMoviesMessage">Список фильмов пуст</p>
+    <ul id="movieList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
